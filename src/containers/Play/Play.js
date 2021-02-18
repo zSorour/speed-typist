@@ -163,7 +163,6 @@ const Play = () => {
                     disabled={!isPlaying}
                     value={inputTextValue}
                     onChange={inputChangeHandler}
-                    placeholder="..."
                     ref={inputRef}
                     onPaste={(e) => { e.preventDefault() }} />
             </div>

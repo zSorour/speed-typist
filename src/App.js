@@ -5,14 +5,13 @@ import { useState } from 'react'
 import { Route } from 'react-router-dom'
 import Landing from './components/Landing/Landing'
 import Play from './containers/Play/Play'
-import classes from './App.module.css'
 
 const App = () => {
 
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
 
   return (
-    <div className={classes.App}>
+    <div>
       <NavigationBar clicked={() => setSideDrawerOpen(!sideDrawerOpen)} />
       <SideDrawer open={sideDrawerOpen} closed={() => { console.log("CLOSE"); return setSideDrawerOpen(!sideDrawerOpen) }} />
       <Route path="/" exact component={Landing} />
