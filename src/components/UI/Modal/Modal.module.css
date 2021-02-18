@@ -1,0 +1,22 @@
+.Modal {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s ease-out;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.897);
+  z-index: 300px;
+}
+
+.Closed {
+  transform: translateY(-100%);
+}
+
+.Opened {
+  transform: translateY(0);
+}

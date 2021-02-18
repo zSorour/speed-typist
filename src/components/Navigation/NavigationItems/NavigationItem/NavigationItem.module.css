@@ -1,0 +1,31 @@
+.NavigationItem {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.NavigationItem a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.NavigationItem a:hover,
+.NavigationItem a:active,
+.NavigationItem a.active {
+  color: rgba(255, 255, 255, 0.637);
+}
+
+
+@media (max-width: 768px) {
+  .NavigationItem {
+      height: 50px;
+  }
+
+  .NavigationItem a:hover,
+  .NavigationItem a:active,
+  .NavigationItem a.active {
+    color: rgb(80, 80, 80);
+  }
+}

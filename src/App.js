@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import NavigationBar from './components/Navigation/NavigationBar/NavigationBar'
+import SideDrawer from './components/Navigation/SideDrawer/SideDrawer'
+import { useState } from 'react'
+import { Route } from 'react-router-dom'
+import Landing from './components/Landing/Landing'
+import Play from './containers/Play/Play'
+import classes from './App.module.css'
 
-function App() {
+const App = () => {
+
+  const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classes.App}>
+      <NavigationBar clicked={() => setSideDrawerOpen(!sideDrawerOpen)} />
+      <SideDrawer open={sideDrawerOpen} closed={() => { console.log("CLOSE"); return setSideDrawerOpen(!sideDrawerOpen) }} />
+      <Route path="/" exact component={Landing} />
+      <Route path="/play" exact component={Play} />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
