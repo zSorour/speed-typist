@@ -11,7 +11,6 @@ import correctWordFX from '../../soundFX/correctWord.mp3'
 import gameOverFX from '../../soundFX/gameOver.mp3'
 import newHighScoreFX from '../../soundFX/newHighScore.mp3'
 
-
 const Play = () => {
 
     const [currentWord, setCurrentWord] = useState(randomWords());
@@ -152,7 +151,7 @@ const Play = () => {
                 {isGameOver && <h3 style={{ fontWeight: "bold", fontSize: "5em" }}>GAME OVER!</h3>}
             </Modal>
 
-            <Score currentScore={currentScore} personalTopScore={personalTopScore} globalTopScore={243} />
+            <Score currentScore={currentScore} personalTopScore={personalTopScore} />
 
             <WordCard
                 word={currentWord === '' ? 'Press Play to start showing words' : currentWord}

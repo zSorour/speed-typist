@@ -6,7 +6,6 @@ const Score = (props) => {
         <div className={classes.Score}>
             <h3> Current Score: {props.currentScore}</h3>
             <h3>Your Top Score: {props.personalTopScore}</h3>
-            <h3>Global Top Score: {props.globalTopScore}</h3>
         </div>
     )
 }
