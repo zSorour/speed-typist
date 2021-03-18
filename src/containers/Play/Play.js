@@ -13,6 +13,7 @@ import newHighScoreFX from '../../soundFX/newHighScore.mp3'
 
 const Play = () => {
 
+    //TODO: Refactor code to manage state using useReducer instead of useState for cleaner and better state management
     const [currentWord, setCurrentWord] = useState(randomWords());
     const [defaultInGameSeconds, setDefaultInGameSeconds] = useState(3);
     const [secondsToGameOver, setSecondsToGameOver] = useState(defaultInGameSeconds);

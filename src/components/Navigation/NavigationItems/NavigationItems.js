@@ -7,7 +7,7 @@ const NavigationItems = (props) => {
         <ul className={classes.NavigationItems}>
             <NavigationItem link="/play" clicked={props.clicked}>Play Now!</NavigationItem>
             <NavigationItem link="/scoreboard" clicked={props.clicked}>Scoreboard</NavigationItem>
-            <NavigationItem link="/guide-to-faster-typing-speed" clicked={props.clicked}>Guide</NavigationItem>
+            <NavigationItem link="/guide" clicked={props.clicked}>Guide</NavigationItem>
         </ul>
     )
 }
