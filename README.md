@@ -1,7 +1,8 @@
-# Deployed on Vercel:
-
+___
+# Speed Typist
+ Available at:
  [https://speed-typist.vercel.app/](https://speed-typist.vercel.app)
-
+___
 ## Available Scripts
 
 In the project directory, you can run:
