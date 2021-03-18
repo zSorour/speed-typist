@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Deployed on Vercel:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+speed-typist-git-master-zsorour.vercel.app
 
 ## Available Scripts
 
