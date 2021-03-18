@@ -1,6 +1,6 @@
 # Deployed on Vercel:
 
- [speed-typist-git-master-zsorour.vercel.app](speed-typist-git-master-zsorour.vercel.app)
+ [https://speed-typist.vercel.app/](https://speed-typist.vercel.app)
 
 ## Available Scripts
 
