@@ -109,7 +109,7 @@ const Play = () => {
     //MONITORING TEXT VALUE CHANGE
     useEffect(() => {
         if (isPlaying && inputTextValue.length === currentWord.length) {
-            if (inputTextValue === currentWord) {
+            if (inputTextValue.toLowerCase() === currentWord) {
                 playCorrectWordFX();
                 setSecondsToGameOver(defaultInGameSeconds);
                 setInputTextValue('');
